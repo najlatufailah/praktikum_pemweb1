@@ -40,7 +40,7 @@ h4 {
 h5 {
     font-family: "Beautiful Maples", cursive;
     font-size: 30px;
-    text-align:center;
+    text-align: center;
     margin: 0;
 }
 
@@ -51,10 +51,11 @@ label {
     font-family: "Arial Narrow", cursive;
 }
 
+/* --- Section Profil & Bio --- */
 .profil {
     width: 600px;
     max-width: 90%;
-    margin: 20px auto 20px auto;
+    margin: 20px auto;
     text-align: center;
     font-size: 24px;
     padding: 10px;
@@ -67,7 +68,7 @@ label {
     border: 8px solid #FFB7D5;
     object-fit: cover;
     display: block;
-    margin: 0 auto 15px auto;
+    margin: 0 auto 15px;
 }
 
 .depart {
@@ -93,26 +94,26 @@ label {
     color: #CE1669;
 }
 
-
+/* --- Edu & Skills --- */
 .edu-skills-container {
     display: flex;
     justify-content: space-between;
     gap: 15px;
     width: 100%;
-    max-width: 500px; 
-    margin: 25px auto 25px auto;
+    max-width: 500px;
+    margin: 25px auto;
 }
 
-.edu-column, 
+.edu-column,
 .skills-column {
-    flex: 1; 
+    flex: 1;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
 .title-box {
-    background-color: #FFF9B7; 
+    background-color: #FFF9B7;
     border: 2px solid #F4EC8E;
     border-radius: 12px;
     padding: 8px;
@@ -126,17 +127,17 @@ label {
 }
 
 .content-box {
-    background-color: #FFB7D5; 
+    background-color: #FFB7D5;
     border: 2px solid #DD85AA;
     border-radius: 12px;
     padding: 15px;
     text-align: left;
-    height: 100%; 
+    height: 100%;
 }
 
 .content-box ul {
     margin: 0;
-    padding-left: 18px; 
+    padding-left: 18px;
     color: #3B2A22;
 }
 
@@ -144,15 +145,17 @@ label {
     margin-bottom: 6px;
 }
 
-
-.experience {
+/* --- Experience & Achievements --- */
+.experience,
+.achievements {
     width: 100%;
-    max-width: 650px; 
+    max-width: 650px;
     margin: 30px auto 0;
     box-sizing: border-box;
 }
 
-.experience-title {
+.experience-title,
+.achievements-title {
     color: #FFB7D5;
     font-family: "Patrick Hand", "Beautiful Maples", cursive;
     font-size: 50px;
@@ -160,7 +163,8 @@ label {
     text-align: left;
 }
 
-.experience-box {
+.experience-box,
+.achievements-box {
     width: 100%;
     background-color: #FFF9B7;
     color: #3B2A22;
@@ -184,245 +188,260 @@ label {
     font-weight: bold;
     color: #3B2A22;
     margin-top: 0;
-    margin-bottom: 2px; 
+    margin-bottom: 2px;
 }
 
 .experience-item p {
     font-size: 16px;
     color: #5A4438;
     margin-top: 0;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
 }
 
-.experience-item ul {
-    margin: 0;
-    padding-left: 20px;
-}
-
-.experience-item li {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #3B2A22;
-}
-
-
-
-.achievements {
-    width: 100%;
-    max-width: 650px; 
-    margin: 35px auto 0;
-    box-sizing: border-box;
-}
-
-.achievements-title {
-    color: #FFB7D5;
-    font-family: "Patrick Hand", "Beautiful Maples", cursive;
-    font-size: 50px;
-    margin-bottom: 15px;
-    text-align: left;
-}
-
-.achievements-box {
-    width: 100%;
-    background-color: #FFF9B7;
-    color: #3B2A22;
-    padding: 25px;
-    border: 3px solid #F4EC8E;
-    border-radius: 18px;
-    text-align: left;
-    box-sizing: border-box;
-}
-
+.experience-item ul,
 .achievements-box ul {
     margin: 0;
     padding-left: 20px;
 }
 
+.experience-item li,
 .achievements-box li {
     font-size: 16px;
     line-height: 1.5;
-    margin-bottom: 10px; 
     color: #3B2A22;
+}
+
+.achievements-box li {
+    margin-bottom: 10px;
 }
 
 .achievements-box li:last-child {
     margin-bottom: 0;
 }
 
+/* --- Global & Container --- */
+html {
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
 
+body.cv-page {
+    margin: 0;
+    padding: 0;
+    background-color: #382D29;
+    width: 100%;
+}
 
-/* About, Project, Social */
 .cv-page .container {
-    max-width: 820px;
+    width: 100%;
+    max-width: 100%;
     margin: 0 auto;
     color: #382D29;
+    background-color: #FFF9B7;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 .cv-page h1 {
+    font-size: 60px;
+    text-align: left;
     margin: 0 0 25px;
 }
 
 .cv-page h2 {
+    font-size: 50px;
     text-align: center;
-    font-size: 42px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    margin-top: 0;
 }
 
 .cv-page p {
-    font-size: 18px;
-    line-height: 1.5;
+    font-size: 20px;
+    line-height: 1.6;
 }
 
+/* --- Navbar --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #382D29;
+    padding: 12px 18px;
+    box-sizing: border-box;
+}
+
+.navbar .logo {
+    color: #FF89BB;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.navbar .nav-links {
+    display: flex;
+    gap: 12px;
+}
+
+.navbar a {
+    color: #FFB7D5;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.navbar a.active {
+    color: #FF89BB;
+}
+
+/* --- Header --- */
+.cv-page header {
+    background-color: #FFF9B7;
+    background-image: radial-gradient(#382D29 18%, transparent 19%);
+    background-size: 20px 20px;
+    padding: 110px 40px;
+    border-bottom: 5px solid #382D29;
+    text-align: left;
+}
+
+.cv-page header h1 {
+    font-size: 70px;
+    color: #dd85aa;
+    margin: 0;
+    text-align: left;
+}
+
+/* --- About --- */
 .cv-page .about {
-    background-color: #FFB7D5;
-    border: 3px solid #FFB7D5;
-    border-radius: 15px;
-    padding: 30px;
+    background: linear-gradient(to bottom, #FFB7D5, #FF89BB);
+    padding:  100px 40px ;
+    text-align: center;
+    border-bottom: 5px solid #382D29;
+}
+
+.cv-page .about h2 {
+    color: #382D29;
 }
 
 .cv-page .about p {
-    max-width: 540px;
-    margin: 0 auto 15px;
+    max-width: 800px;
+    margin: 0 auto 20px;
 }
 
 .cv-page .about-stars {
     color: #FFF9B7;
-    font-size: 28px;
-    letter-spacing: 8px;
+    font-size: 40px;
+    letter-spacing: 15px;
 }
 
+/* --- Project --- */
 .cv-page .project {
-    margin: 35px 0;
+    background: repeating-linear-gradient(
+        90deg,
+        #3B2A22,
+        #3B2A22 15px,
+        #4A3A34 15px,
+        #4A3A34 30px
+    );
+    padding: 100px 40px;
 }
-
 .cv-page .project h2 {
     color: #FFB7D5;
+    text-align: center;
+    margin-bottom: 30px;
 }
-
 .cv-page .project-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 18px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
 }
 
 .cv-page .project-card {
-    position: relative;
     background-color: #FFB7D5;
-    border: 3px solid #DD85AA;
-    border-radius: 12px;
-    padding: 12px;
+    border: 2px solid #382D29;
+    border-radius: 10px;
+    padding: 6px;
+    position: relative;
+    box-sizing: border-box;
 }
 
-.cv-page .project-card:hover {
-    border-color: #FFF9B7;
+.cv-page .project-art {
+    height: 60px;
+    font-size: 28px;
+
+}
+
+.cv-page .project-card h3 {
+    font-size: 11px;
+    margin: 6px 0 2px;
+    color: #382D29;
+}
+
+.cv-page .project-card p {
+    font-size: 8px;
+    line-height: 1.2;
+    color: #382D29;
 }
 
 .cv-page .project-badge {
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 4px;
+    left: 4px;
     background-color: #FFF9B7;
     color: #382D29;
-    padding: 5px 8px;
-    border-radius: 6px;
-    font-family: "Arial Narrow", sans-serif;
-    font-weight: bold;
+    padding: 2px 4px;
+    font-size: 8px;
+    border-radius: 4px;
 }
 
-.cv-page .project-art {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 150px;
-    background-color: #473A34;
-    color: #FFF9B7;
-    border-radius: 7px;
-    font-family: Georgia, serif;
-    font-size: 70px;
-}
-
-.cv-page .project-card h3 {
-    font-size: 23px;
-    margin: 15px 0 8px;
-}
-
-.cv-page .project-card p {
-    font-size: 16px;
-    margin: 0 0 8px;
-}
-
+/* --- Social --- */
 .cv-page .social {
-    background-color: #FFF9B7;
-    border: 3px solid #F4EC8E;
-    border-radius: 15px;
-    padding: 25px;
+    background: linear-gradient(to bottom, #FFB7D5, #FF89BB);
+    padding: 100px 40px;
+    text-align: center;
+}
+
+.cv-page .social h2 {
+    color: #f11370;
 }
 
 .cv-page .social p {
-    margin: 0 0 18px;
+    margin: 0 0 25px;
 }
 
 .cv-page .social-links {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 20px;
 }
 
 .cv-page .social-links a {
     display: inline-block;
-    background-color: #FFB7D5;
-    border: 2px solid #DD85AA;
-    border-radius: 8px;
-    padding: 10px 18px;
+    background-color: #FFF9B7;
+    border: 3px solid #382D29;
+    border-radius: 30px;
+    padding: 15px 30px;
     color: #382D29;
-    font-family: "Arial Narrow", sans-serif;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: bold;
     text-decoration: none;
+    transition: all 0.2s;
 }
 
 .cv-page .social-links a:hover {
-    background-color: #DD85AA;
-    text-decoration: underline;
+    background-color: #FF89BB;
+    transform: scale(1.05);
 }
 
-@media (max-width: 768px) {
-    .cv-page {
-        padding: 24px;
-    }
-
-    .cv-page .project-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
+/* --- Responsive --- */
+@media (max-width: 900px) {
     .cv-page h1 {
-        font-size: 48px;
+        font-size: 50px;
     }
-
     .cv-page h2 {
-        font-size: 36px;
-    }
-}
-
-@media (max-width: 480px) {
-    .cv-page {
-        padding: 16px;
-    }
-
-    .cv-page .project-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .cv-page h1 {
         font-size: 40px;
     }
-
-    .cv-page h2 {
-        font-size: 30px;
-    }
-
-    .cv-page .about,
-    .cv-page .social {
-        padding: 20px 16px;
+    .cv-page p {
+        font-size: 18px;
     }
 }
